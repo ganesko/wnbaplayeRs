@@ -1,0 +1,21 @@
+Package: wnbaplayeRs
+Title: Summarizes 2024 Season WNBA Player Statistics
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Sophia", "Hillard", , "shillard@smith.edu", role = c("aut"),
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+    person("Callie", "Showalter", , "cshowalter@smith.edu", role = c("aut"),
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+    person("Greta", "Anesko", , "ganesko@smith.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    )
+Description: This package contains Sophia's function get_wnba_player_stats that retrieves the statistics of a specified WNBA player from the 2024 season.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    dplyr
+Depends: 
+    R (>= 2.10)
+LazyData: true
