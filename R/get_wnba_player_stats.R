@@ -1,4 +1,3 @@
-globalVariables("player")
 #' Get 2024 Player Data from WNBA Statistics
 #'
 #' This function retrieves the statistics of a specified WNBA player from the dataset.
@@ -31,7 +30,7 @@ get_wnba_player_stats <- function(player_name) {
   player_name <- toupper(player_name)
   # ensuring there isn't case sensitivity
   player_info <- wnba_stats_24 |> 
-    filter(player_name == player)
+    filter(player_name == PLAYER)
   
   player_check <- nrow(player_info)
   
