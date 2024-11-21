@@ -1,3 +1,4 @@
+globalVariables(c("wnba_stats_24", "PLAYER"))
 #' Get 2024 Player Data from WNBA Statistics
 #'
 #' This function retrieves the statistics of a specified WNBA player from the dataset.
@@ -41,9 +42,9 @@ get_wnba_player_stats <- function(player_name) {
   }
   
   else {
-    player_site <- paste("https://stats.wnba.com/player/",player_info$lookup,"/", sep = "")
+    player_site <- paste("https://stats.wnba.com/player/",player_info$LOOKUP,"/", sep = "")
     player_site <- gsub(" ", "", player_site)
-    player_additional <- (paste("For more information on", player_info$player, "visit", player_site))
+    player_additional <- (paste("For more information on", player_info$PLAYER, "visit", player_site))
     cat(player_additional)
     player_summary <- player_info[-30]
     player_summary_return <- as.data.frame(player_summary)
