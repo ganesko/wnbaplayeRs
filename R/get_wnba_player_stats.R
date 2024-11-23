@@ -19,7 +19,7 @@
 #' get_wnba_player_stats("Unknown Player")  # Should return a not found message
 #'
 #' @author Sophia Hillard
-#'
+#' @importFrom dplyr filter
 #' @export 
 
 
