@@ -20,7 +20,6 @@
 #'
 #' @author Sophia Hillard
 #'
-#' @import dplyr
 #' @export 
 
 
@@ -30,7 +29,7 @@ get_wnba_player_stats <- function(player_name) {
   player_name <- toupper(player_name)
   # ensuring there isn't case sensitivity
   player_info <- wnba_stats_24 |> 
-    filter(player_name == PLAYER)
+    filter(player == player_name)
   
   player_check <- nrow(player_info)
   
@@ -41,10 +40,8 @@ get_wnba_player_stats <- function(player_name) {
   }
   
   else {
-    player_site <- paste("https://stats.wnba.com/player/",player_info$lookup,"/", sep = "")
-    player_site <- gsub(" ", "", player_site)
+    player_site <- paste0("https://stats.wnba.com/player/",player_info$lookup,"/", sep = "")
     player_additional <- (paste("For more information on", player_info$player, "visit", player_site))
-    cat(player_additional)
     player_summary <- player_info[-30]
     player_summary_return <- as.data.frame(player_summary)
     message(player_additional)
@@ -52,3 +49,6 @@ get_wnba_player_stats <- function(player_name) {
   }
 }
 
+
+#cli package for clickable links in command line! makes color and prob URL 
+#import from
