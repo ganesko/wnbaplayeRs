@@ -19,7 +19,7 @@
 #' get_wnba_player_stats("Unknown Player")  # Should return a not found message
 #'
 #' @author Sophia Hillard
-#' @importFrom dplyr filter
+#' @import dplyr
 #' @export 
 
 
@@ -27,6 +27,7 @@
 get_wnba_player_stats <- function(player_name) {
   # this function will get the necessary player data and vectorise it
   player_name <- toupper(player_name)
+  print(player_name)
   # ensuring there isn't case sensitivity
   player_info <- wnba_stats_24 |> 
     filter(player == player_name)
