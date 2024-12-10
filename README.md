@@ -41,8 +41,14 @@ You can install the development version of wnbaplayeRs from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("sds270-f24/wnbaplayeRs")
+# install.packages("devtools")
+devtools::install_github("sds270-f24/wnbaplayeRs")
+```
+
+You can load the package using:
+
+``` r
+library(wnbaplayeRs)
 ```
 
 ## Data
