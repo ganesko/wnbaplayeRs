@@ -73,12 +73,6 @@ wnba_stat_grapher(c("Sue Bird", "Allie Quigley"), "f_tr")
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 
 
 ## Package Contributors:
