@@ -52,9 +52,11 @@ website.
 
 ## Examples
 
-Using `get_wnba_player_stats function`, users can easily get a snapshot
-of information about a selected player, and can get quickly linked to
-the player’s stat webpage.
+##### Example 1
+
+Using the `get_wnba_player_stats` function, users can easily get a
+snapshot of information about a selected player, and can get quickly
+linked to the player’s stat webpage.
 
 ``` r
 library(wnbaplayeRs)
@@ -66,6 +68,16 @@ get_wnba_player_stats("Caitlin Clark")
 #>   fta  ftp oreb dreb reb ast tov stl blk  pf   fp dd td plmin
 #> 1 4.5 90.6  0.4  5.3 5.7 8.4 5.6 1.3 0.7 2.8 40.4 14  2  -1.6
 ```
+
+##### Example 2
+
+Using the `wnba_stat_grapher` function, users can visualize a selected
+statistic of one or more players in order to see change over time, as
+well as compare players.
+
+    wnba_stat_grapher(c("Sue Bird", "Allie Quigley"), "f_tr")
+
+<img src='data-raw/wnba_stats.png' align="right" height="400"/>
 
 ## Package Contributors:
 
