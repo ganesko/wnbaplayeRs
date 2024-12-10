@@ -50,7 +50,9 @@ Included in this package is player data sourced from the WNBA's official website
 
 ## Examples
 
-Using `get_wnba_player_stats function`, users can easily get a snapshot of information about a selected player, and can get quickly linked to the player's stat webpage. 
+##### Example 1
+
+Using the `get_wnba_player_stats` function, users can easily get a snapshot of information about a selected player, and can get quickly linked to the player's stat webpage. 
 
 ```{r, message = T}
 library(wnbaplayeRs)
@@ -59,6 +61,15 @@ get_wnba_player_stats("Caitlin Clark")
 
 ```
 
+##### Example 2
+
+Using the `wnba_stat_grapher` function, users can visualize a selected statistic of one or more players in order to see change over time, as well as compare players. 
+
+```
+wnba_stat_grapher(c("Sue Bird", "Allie Quigley"), "f_tr")
+
+```
+<img src='data-raw/wnba_stats.png' align="right" height="400"/>
 
 ## Package Contributors:
 
