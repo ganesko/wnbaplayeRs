@@ -47,7 +47,7 @@ pak::pak("sds270-f24/wnbaplayeRs")
 
 ## Data
 
-The data included in this package is sourced from the WNBA’s official
+Included in this package is player data sourced from the WNBA’s official
 website.
 
 ## Examples
@@ -57,7 +57,14 @@ of information about a selected player, and can get quickly linked to
 the player’s stat webpage.
 
 ``` r
+library(wnbaplayeRs)
+
 get_wnba_player_stats("Caitlin Clark")
+#> For more information on CAITLIN CLARK visit https://stats.wnba.com/player/1642286/
+#>          player team age gp  w  l  min  pts fgm  fga  fgp thpm thpa thpp ftm
+#> 1 CAITLIN CLARK  IND  22 40 20 20 35.4 19.2 6.1 14.5 41.7  3.1  8.9 34.4 4.1
+#>   fta  ftp oreb dreb reb ast tov stl blk  pf   fp dd td plmin
+#> 1 4.5 90.6  0.4  5.3 5.7 8.4 5.6 1.3 0.7 2.8 40.4 14  2  -1.6
 ```
 
 ## Package Contributors:

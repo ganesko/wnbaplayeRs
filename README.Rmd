@@ -46,13 +46,15 @@ pak::pak("sds270-f24/wnbaplayeRs")
 
 ## Data
 
-The data included in this package is sourced from the WNBA's official website.
+Included in this package is player data sourced from the WNBA's official website.
 
 ## Examples
 
 Using `get_wnba_player_stats function`, users can easily get a snapshot of information about a selected player, and can get quickly linked to the player's stat webpage. 
 
-``` r        
+```{r, message = T}
+library(wnbaplayeRs)
+
 get_wnba_player_stats("Caitlin Clark")
 
 ```
