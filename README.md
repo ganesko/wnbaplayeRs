@@ -79,7 +79,7 @@ well as compare players.
 
 <img src='data-raw/wnba_stats.png' align="center" height="350"/>
 
-<br> <br> <br> <br> <br> <br> <br>
+<br> <br>
 
 ## Package Contributors:
 
