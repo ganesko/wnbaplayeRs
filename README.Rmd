@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/sds270-f24/endangeRed/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sds270-f24/endangeRed/actions/workflows/R-CMD-check.yaml)
+[![CRAN status](https://www.r-pkg.org/badges/version/packageName)](https://CRAN.R-project.org/package=packageName)
 <!-- badges: end -->
 
 
@@ -26,7 +28,12 @@ knitr::opts_chunk$set(
 
 R package for WNBA player data
 
-This package contains Sophia's function get_wnba_player_stats that retrieves the statistics of a specified WNBA player from the 2024 season. The goal of this package is to make women's professional basketball more accessible to the general public and/or people who are not already familiar with the WNBA.
+This package uses data from the WNBA website which contains WNBA player data from the 2002 season to the 2024 season, including a player's team, age, and various game statistics. The package's goal is to make women's professional basketball more accessible to the general public, more specifically, people who are not already familiar with the WNBA. The package does this by summarizing and visualizing player data and allowing for comparisons between players. The functions include:
+
+- `get_wnba_player_stats()`, which retrieves the statistics and of a specified WNBA player from the dataset and links to the player's stats webpage.
+- `wnba_stat_grapher()`, which graphs a statistic for one or more WNBA players selected from the data over the course of their time in the WNBA.
+- `player_shot_chart()`, which visualizes where players shoot from on the court in a selected WNBA season.
+
 
 ## Installation
 
@@ -37,12 +44,22 @@ You can install the development version of wnbaplayeRs from [GitHub](https://git
 pak::pak("sds270-f24/wnbaplayeRs")
 ```
 
+## Data
+
+The data included in this package is sourced from the WNBA's official website.
+
 ## Examples
 
-This is a basic example which shows you how to solve a common problem:
+Using `get_wnba_player_stats function`, users can easily get a snapshot of information about a selected player, and can get quickly linked to the player's stat webpage. 
 
-```{r example}
-library(wnbaplayeRs)
-## need 2 add basic example code
+``` r        
+get_wnba_player_stats("Caitlin Clark")
+
 ```
 
+
+## Package Contributors:
+
+-   [Greta Anesko](https://github.com/ganesko)
+-   [Soph Hillard](https://github.com/s0ph1ah)
+-   [Callie Showalter](https://github.com/callieshow)
