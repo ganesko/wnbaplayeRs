@@ -77,7 +77,9 @@ well as compare players.
 
     wnba_stat_grapher(c("Sue Bird", "Allie Quigley"), "f_tr")
 
-<img src='data-raw/wnba_stats.png' align="right" height="400"/>
+<img src='data-raw/wnba_stats.png' align="center" height="350"/>
+
+<br> <br> <br> <br> <br> <br> <br>
 
 ## Package Contributors:
 
