@@ -12,6 +12,8 @@ globalVariables(c("year_id"))
 #' @details This function checks to see if the statistic type and player are in the data
 #' if matches are found for both, it returns a graph of the player(s)' statistic over time.
 #' This graph can be a comparison for multiple players or just show one player
+#' 
+#' @seealso [wnba]
 #' @examples
 #' wnba_stat_grapher("Sue Bird", "f_tr")
 #' wnba_stat_grapher(c("Sue Bird", "Candace Parker"), "f_tr")
