@@ -30,9 +30,12 @@ wnba_stat_grapher(c("Sue Bird", "Candace Parker"), "f_tr")
 wnba_stat_grapher("A'ja Wilson", "mp_pct") 
 
 }
+<<<<<<< HEAD
 \seealso{
 \link{wnba}
 }
+=======
+>>>>>>> a2c3b5a9eadf27c658bc6e73e464718d5d6dbb28
 \author{
 Callie Showalter
 }
