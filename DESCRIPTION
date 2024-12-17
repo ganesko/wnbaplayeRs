@@ -9,13 +9,14 @@ Authors@R: c(
     person("Greta", "Anesko", , "ganesko@smith.edu", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
     )
-Description: This package contains Sophia's function get_wnba_player_stats that retrieves the statistics of a specified WNBA player from the 2024 season.
+Description: This package contains functions that visualize and summarize WNBA player data.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports:
-    dplyr
+    dplyr,
+    ggplot2
 Depends: 
     R (>= 2.10)
 LazyData: true
