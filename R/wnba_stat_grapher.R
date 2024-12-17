@@ -1,3 +1,4 @@
+globalVariables(c("year_id", "player"))
 #' This function graphs a statistic for one or more WNBA players selected from the data
 #'
 #' @param player_names A character string; the name of the player(s) whose statistic will be graphed
@@ -17,6 +18,7 @@
 #' wnba_stat_grapher("A'ja Wilson", "mp_pct") 
 #'
 #' @import ggplot2
+#' @import dplyr
 #' @export
 wnba_stat_grapher <- function(player_names, stat_type) {
   # check if chosen stat_type exists and write message if not

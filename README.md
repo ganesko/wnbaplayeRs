@@ -81,11 +81,11 @@ Using the `wnba_stat_grapher` function, users can visualize a selected
 statistic of one or more players in order to see change over time, as
 well as compare players.
 
-    wnba_stat_grapher(c("Sue Bird", "Allie Quigley"), "f_tr")
+``` r
+wnba_stat_grapher("Sue Bird", "f_tr")
+```
 
-<img src='data-raw/wnba_stats.png' align="center" height="350"/>
-
-<br> <br>
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
 ## Package Contributors:
 

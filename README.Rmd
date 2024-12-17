@@ -71,14 +71,10 @@ get_wnba_player_stats("Caitlin Clark")
 
 Using the `wnba_stat_grapher` function, users can visualize a selected statistic of one or more players in order to see change over time, as well as compare players. 
 
+```{r}
+wnba_stat_grapher("Sue Bird", "f_tr")
 ```
-wnba_stat_grapher(c("Sue Bird", "Allie Quigley"), "f_tr")
 
-```
-<img src='data-raw/wnba_stats.png' align="center" height="350"/>
-
-<br>
-<br>
 
 
 ## Package Contributors:
