@@ -32,7 +32,6 @@ This package uses data from the WNBA website which contains WNBA player data fro
 
 - `get_wnba_player_stats()`, which retrieves the statistics and of a specified WNBA player from the dataset and links to the player's stats webpage.
 - `wnba_stat_grapher()`, which graphs a statistic for one or more WNBA players selected from the data over the course of their time in the WNBA.
-- `player_shot_chart()`, which visualizes where players shoot from on the court in a selected WNBA season.
 
 
 ## Installation
