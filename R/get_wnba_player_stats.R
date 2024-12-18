@@ -1,3 +1,4 @@
+globalVariables(c("wnba_stats_24", "wnba"))
 #' Get 2024 Player Data from WNBA Statistics
 #'
 #' This function retrieves the statistics of a specified WNBA player from the dataset.
